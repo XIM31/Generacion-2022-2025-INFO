@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generación 2022-2025 - Informática CONALEP 057</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f7f1e3;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        #header {
+            background-color: #007E67;
+            color: #ffffff;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #descripcion {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            text-align: justify;
+            font-size: 18px;
+            background: #fff3e0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #eef7f5;
+            background-color: #007E67;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #ffe0b2;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .rating {
+            font-size: 40px;
+            cursor: pointer;
+        }
+        .selected {
+            transform: scale(1.2);
+        }
+.boton {
+      display: block;
+      width: 80%;
+      max-width: 400px;
+      padding: 15px;
+      margin: 10px auto;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #007E67;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .boton:hover {
+      background-color: #ffe0b2;
+      color: #4d2600;
+    }
+    .btn-regresar {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #4d2600;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 16px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+    .btn-regresar:hover {
+      background-color: #663300;
+    }
+    </style>
+</head>
+<body>
+    <div id="header">Generación 2022-2025</div>
+    
+    <div id="descripcion">
+        <p><strong>El propósito de esta página:</strong> recordar con cariño a la generación 2022-2025 de la carrera de Informática del CONALEP 057. Este espacio está dedicado a mantener vivos nuestros mejores momentos.</p>
+    </div>
+    
+    <img src="grupogra.JPEG" alt="Imagen">
+    
+    <nav>
+        <a href="file:///D:/6to/codigos%20martha/PROYECTO/ddd.html">Egresados</a>
+        <a href="file:///D:/6to/codigos%20martha/PROYECTO/musica.html">Música</a>
+        <a href="file:///D:/6to/codigos%20martha/PROYECTO/galeria.html">Galería</a>
+        <a href="file:///D:/6to/codigos%20martha/PROYECTO/contacto.html">Contacto</a>
+    </nav>
+    
+    <!-- Nueva sección de calificación -->
+    <h2>¿Qué te pareció esta página?</h2>
+    <div id="caras" class="rating">
+        <span onclick="seleccionar(1)">😠</span>
+        <span onclick="seleccionar(2)">😐</span>
+        <span onclick="seleccionar(3)">😊</span>
+        <span onclick="seleccionar(4)">😃</span>
+        <span onclick="seleccionar(5)">😍</span>
+    </div>
+    <p id="respuesta"></p>
+
+    <script>
+        function seleccionar(valor) {
+            const caritas = document.querySelectorAll("#caras span");
+            caritas.forEach((cara, index) => {
+                cara.classList.remove("selected");
+                if (index + 1 === valor) {
+                    cara.classList.add("selected");
+                }
+            });
+
+            const mensajes = [
+                "Muy mala",
+                "Regular",
+                "Buena",
+                "Muy buena",
+                "Excelente"
+            ];
+            document.getElementById("respuesta").textContent = "Tu calificación: " + mensajes[valor - 1];
+        }
+    </script>
+
+<!-- Botón Regresar abajo -->
+    <a href="file:///D:/6to/codigos%20martha/PROYECTO/principal.HTML" class="btn-regresar">⬅ Regresar</a>
+  </div> 
+
+</body>
+</html>

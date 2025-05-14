@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALBUM</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f5f5dc; /* Beige */
+            color: #4d2600; /* Café */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h3 {
+            font-family: monospace;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        video {
+            margin-top: 20px;
+            border: 2px solid #4d2600;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .galeria {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .galeria img {
+            width: 300px;
+            border: 2px solid #4d2600;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .galeria video {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        .grande {
+            width: 80%;
+            max-width: 800px;
+        }
+        .seccion-videos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Nuestra trayectoria</h2>
+
+    <section class="galeria">
+        <div>
+            <img src="GRUPO.JPEG" alt="Imagen 1" class="grande">
+        </div>
+    </section>
+
+    <section class="galeria">
+        <div>
+            <h3>Imágenes de la generación</h3>
+            <img src="evento7.JPG" alt="Imagen ">
+            <img src="festejo1.JPEG" alt="Imagen ">
+            <img src="festejo2.JPEG" alt="Imagen ">
+            <img src="festejo3.JPEG" alt="Imagen ">
+            <img src="evento1.JPEG" alt="Imagen ">
+            <img src="evento2.JPEG" alt="Imagen ">
+            <img src="evento3.JPEG" alt="Imagen ">
+            <img src="evento5.JPEG" alt="Imagen ">
+            <img src="evento4.JPEG" alt="Imagen ">
+            <img src="evento9.JPG" alt="Imagen ">
+            <img src="evento10.JPG" alt="Imagen ">
+        </div>
+    </section>
+
+    <section class="galeria seccion-videos">
+        <h3>Videos de la generación</h3>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+            <video controls>
+                <source src="evento6.MP4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <video controls>
+                <source src="evento8.MP4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <video controls>
+                <source src="evento.MP4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    </section>
+
+<a href="file:///D:/Martha/PROYECTO/galeria.html" style="
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #4d2600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 16px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+    z-index: 999;
+" onmouseover="this.style.backgroundColor='#663300'" onmouseout="this.style.backgroundColor='#4d2600'">
+    ⬅ Regresar
+</a>
+
+</body>
+</html>
